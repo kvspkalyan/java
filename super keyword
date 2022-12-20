@@ -1,0 +1,44 @@
+import java.io.*;
+import java.lang.*;
+class Pc
+{
+    int i,j;
+    Pc()
+    {
+        i=j=-1;
+    }
+    Pc(int a)
+    {
+        i=j=a;
+    }
+    Pc(int a,int b)
+    {
+        i=a;
+        j=b;
+    }
+    int area()
+    {
+        return i*j;
+    }
+}    
+class Ch extends Pc
+{
+    int s;
+    Ch(int l,int b,int c)
+    {
+        super(l,b);
+        s=c;
+    }
+}
+class Super
+{
+    public static void main(String args[])
+    {
+        Pc o=new Pc();
+        int a= o.area();
+        System.out.println(a);
+        Ch o1=new Ch(2,3,4);
+        a=o1.area();
+        System.out.println(a);
+    }
+}
