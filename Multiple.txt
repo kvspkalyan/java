@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-
+//Multiplication Table of a number
 class Multiple
 {
   public static void main(String args[])
